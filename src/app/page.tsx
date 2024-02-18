@@ -1,9 +1,15 @@
+import Head from "next/head";
 import Image from "next/image";
 
 // test
 export default function Home() {
   return (
     <main className="">
+      <Head>
+        <title>Sigil TV</title>
+        <meta name="description" content="Sigil TV" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
         <iframe
           src="https://player.twitch.tv/?channel=sigilw&parent=www.sigil.tv&parent=sigil.tv&parent=localhost&autoplay=true"
